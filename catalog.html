@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог GllacyShop</title>
+  <link rel="stylesheet" href="stulesheet.css" type="text/css">
+</head>
+<body>
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo" href="index.html">
+      <img src="img/index_logo.jpeg" alt="Логотип GlassyShop">
+    </a>
+    <ul class="site-navigation">
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="delivery.html">Доставка и оплата</a></li>
+      <li><a href="about_us.html">О Компании</a></li>
+    </ul>
+    <ul class="search">
+      <li><a href="search.html">Поиск</a></li>
+    </ul>
+    <ul class="user-navigation">
+      <li><a href="enter.html">Вход</a></li>
+      <li><a href="basket.html">2 товара</a></li>
+    </ul>
+  </nav>
+  <span class="time-work">с 10 до 20, ежедневно</span>
+  <span class="number">8 812 450-25-25</span>
+</header>
+<main>
+  <h1 class="hidden">Каталог магазина GllacyShop</h1>
+  <nav class="crumbs-navigation">
+    <ul class="crumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a class="page-now">Сливочное</a></li>
+    </ul>
+  </nav>
+  <h2>Сливочное мороженное</h2>
+  <form action="URL" metod="post">
+    <fieldset>
+      <legend>Сортировка:</legend>
+      <select name="sorting">
+        <option value="pop">по популярности</option>
+        <option value="cheap">сначала не дорогие</option>
+        <option value="expensive">сначала дорогие</option>
+        <option value="fat">по жирности</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Цена: 100 руб. - 500 руб.</legend>
+      <input type="range" min="100" max="500" step="10">
+    </fieldset>
+    <fieldset>
+      <legend>Жирность:</legend>
+      <label>
+        <input type="radio" name="percentage" value="0">
+        0%
+      </label>
+      <label>
+        <input type="radio" name="percentage" value="10" checked>
+        до 10%
+      </label>
+      <label>
+        <input type="radio" name="percentage" value="30">
+        до 30%
+      </label>
+      <label>
+        <input type="radio" name="percentage" value=">30">
+        выше 30%
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Наполнители:</legend>
+      <label>
+        <input type="checkbox" name="toppings-chocolate" checked>
+        шоколадные
+      </label>
+      <label>
+        <input type="checkbox" name="toppings-sugar" checked>
+        сахарные присыпки
+      </label>
+      <label>
+        <input type="checkbox" name="toppings-fruit">
+        фрукты
+      </label>
+      <label>
+        <input type="checkbox" name="toppings-syrip">
+        сиропы
+      </label>
+      <label>
+        <input type="checkbox" name="toppings-jam">
+        джемы
+      </label>
+    </fieldset>
+    <button type="submit">Применить</button>
+  </form>
+  <section class="catalog">
+    <ul class="bestseller">
+      <li class="hover gllacy">
+        <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+        <img src="gllacy_orange.jpeg" alt="шарик мороженного">
+        <span class="price">310&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+      <li class="hover gllacy">
+        <h3>Сливочно-кофейное с кусочками шоколада</h3>
+        <img src="gllacy_cofe.jpeg" alt="шарик мороженного">
+        <span class="price">380&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+      <li class="hover gllacy">
+        <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+        <img src="gllacy_strawberry.jpeg" alt="шарик мороженного">
+        <span class="price">355&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+      <li class="hover gllacy">
+        <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+        <img src="gllacy_cream_brulee.jpeg" alt="шарик мороженного">
+        <span class="price">415&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+      <li class="hover gllacy">
+        <h3>Сливочное с брусничным джемом</h3>
+        <img src="gllacy_orange.jpeg" alt="шарик мороженного">
+        <span class="price">325&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+      <li class="hover gllacy">
+        <h3>Сливочно-черничное с цельными ягодами черники </h3>
+        <img src="gllacy_cofe.jpeg" alt="шарик мороженного">
+        <span class="price">410&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+      <li class="hover gllacy">
+        <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+        <img src="gllacy_strawberry.jpeg" alt="шарик мороженного">
+        <span class="price">375&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+      <li class="hover gllacy">
+        <h3>Сливочное с шоколадной стружкой</h3>
+        <img src="gllacy_cream_brulee.jpeg" alt="шарик мороженного">
+        <span class="price">320&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+      <li class="hover gllacy">
+        <h3>Сливочно-ванильное с кусочками шоколада</h3>
+        <img src="gllacy_orange.jpeg" alt="шарик мороженного">
+        <span class="price">440&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+      <li class="hover gllacy">
+        <h3>Сливочноe с ментоловым сиропом</h3>
+        <img src="gllacy_cofe.jpeg" alt="шарик мороженного">
+        <span class="price">435&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+      <li class="hover gllacy">
+        <h3>Сливочное с кусочками черного шоколада</h3>
+        <img src="gllacy_strawberry.jpeg" alt="шарик мороженного">
+        <span class="price">355&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+      <li class="hover gllacy">
+        <h3>Сливочное с мятным сиропом</h3>
+        <img src="gllacy_cream_brulee.jpeg" alt="шарик мороженного">
+        <span class="price">420&#8381;</span>
+        <span class="weight">/кг</span>
+        <a class="hover button" href="preview.html">Быстрый просмотр</a>
+      </li>
+    </ul>
+  </section>
+  <div class="page-navigation">
+    <a class="prev" href="#prev"><</a>
+    <a class="page">1</a></li>
+    <a class="page" href="page2.html">2</a>
+    <a class="page" href="page3.html">3</a>
+    <a class="page" href="page4.html">4</a>
+    <a class="page" href="page5.html">5</a>
+    <a class="next" href="#next">></a>
+  </div>
+</main>
+<footer class="main-footer">
+  <div class="social">
+    <h2 class="hidden">Мы в социальных сетях</h2>
+    <ul>
+      <li><a class="social-button" href="twitter.com">Твиттер</a></li>
+      <li><a class="social-button" href="instagram.com">Инстаграмм</a></li>
+      <li><a class="social-button" href="fasebook.com">Фейсбук</a></li>
+      <li><a class="social-button" href="vk.com">Вконтакте</a></li>
+    </ul>
+  </div>
+  <div class="info-for-suppliers">
+    <h2>Для поставщиков</h2>
+    <ul>
+      <li><a class="suppliers" href="suppliers-technology.html">О производстве</a></li>
+      <li><a class="suppliers" href="suppliers-documents.html">Наши документы</a></li>
+      <li><a class="suppliers" href="suppliers-standarts.html">Экологические стандарты</a></li>
+    </ul>
+  </div>
+  <p class="footer-copyright">
+    <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
+    <b>Сделано в HTML Academy &#64;2017</b>
+  </p>
+</footer>
+<section class="modal modal-basket">
+  <h2 class="hidden">Корзина с мороженным</h2>
+  <table class="menu-product-basket">
+    <tr class="product-basket">
+      <td><span class="button-close">X</span></td>
+      <td><img href="#" alt="мороженное"></td>
+      <td>Пломбир с апельсиновым джемом</td>
+      <td>1,5кг X 200 руб</td>
+      <td>300 руб.</td>
+    </tr>
+    <tr class="product-basket">
+      <td><span class="button-close">X</span></td>
+      <td><img href="#" alt="мороженное"></td>
+      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+      <td>1,5кг X 300 руб</td> <!--Здесь формула-->
+      <td>450 руб.</td> <!--Здесь формула-->
+    </tr>
+  </table>
+  <p>Итого: 750 руб.</p> <!--Здесь формула-->
+  <button type="submit">Оформить заказ</button>
+
+  <!--
+  <h2 class="hidden">Корзина с мороженным на списке</h2>
+  <ul class="menu-product-basket">
+    <li class="product-basket">
+      <span class="button-close">X</span>
+      <img href="#" alt="мороженное">
+      <h3>Пломбир с апельсиновым джемом</h3>
+      <p class="prise-basket">1,5кг X 200 руб</p>
+      <p>300 руб.</p>
+    </li>
+    <li class="product-basket">
+      <span class="button-close">X</span>
+      <img href="#" alt="мороженное">
+      <h3>Клубничный пломбир с присыпкой из белого шоколада</h3>
+      <p class="prise-basket">1,5кг X 300 руб</p>
+      <p>450 руб.</p>
+    </li>
+  </ul>
+  <p>Итого: 750 руб.</p>
+  <button type="submit">Оформить заказ</button>
+  -->
+</section>
+</body>
+</html>
