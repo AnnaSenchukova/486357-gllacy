@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", "sans-serif";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation,
+.user-navigation,
+.submenu {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-item {
+  line-height: 18px;
+  font-weight: 700;
+
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: #b0c0b7;
+}
+
+.site-item>a:hover,
+.site-item>a:active{
+
+  color: #323232;
+
+  background-color:#ffffff;
+  border-bottom: none;
+}
+
+.site-item>a:active{
+  background-color: rgba(248, 247, 244, 0.988);
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+}
+
+.submenu {
+  display: none;
+
+  background-color: #ffffff;
+}
+
+.submenu a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+
+/* Примерный размер отступа для наглядности*/
+.submenu li {
+  padding: 5px;
+}
+
+.submenu li:first-child {
+  color: #323232;
+  font-weight: 700;
+
+  border-bottom: 1px solid #d1d0ce;
+}
+
+.submenu li:first-child a {
+  color: #323232;
+  font-weight: 700;
+}
+
+.site-item:hover .submenu {
+  display: block;
+}
+
+.site-active,
+.submenu-active {
+  background-color: rgba(208,112,88, 37);
+}
+.site-active a,
+.submenu-active a {
+  color: #ffffff;
+}
+
+.submenu li:hover {
+  background-color: rgba(251, 222, 215, 10);
+}
+
+.submenu li:active {
+  background-color: rgba(246,181,165, 23);
+}
+
+
+
+
+
+
+
+
+
