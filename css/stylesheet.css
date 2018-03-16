@@ -45,7 +45,7 @@ a {
 }
 
 .site-item>a:active{
-  background-color: rgba(248, 247, 244, 0.988);
+  background-color: rgb(248, 247, 244);
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 
@@ -85,7 +85,7 @@ a {
 
 .site-active,
 .submenu-active {
-  background-color: rgba(208,112,88, 37);
+  background-color: rgb(208,112,88);
 }
 .site-active a,
 .submenu-active a {
@@ -93,13 +93,121 @@ a {
 }
 
 .submenu li:hover {
-  background-color: rgba(251, 222, 215, 10);
+  background-color: rgb(251, 222, 215);
 }
 
 .submenu li:active {
-  background-color: rgba(246,181,165, 23);
+  background-color: rgb(246,181,165);
 }
 
+.user-navigation a{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.user-navigation li {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.popup {
+  display: none;
+}
+
+.popup,
+.modal {
+  padding: 10px;/* Произвольный отступ для наглядности*/
+
+  background-color: #f8f7f4;
+}
+
+
+.popup input[type="search"],
+.popup input[type="email"],
+.popup input[type="password"],
+.modal-feedback input[type="text"],
+.modal-feedback input[type="email"],
+.modal-feedback textarea {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color:#999999;
+
+  outline: none;
+  border: 1px solid rgb(211,211,210);
+  border-radius: 5px;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {
+  font-size: 16px;
+}
+
+.modal h2 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+}
+
+.alt-actions a {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color:#323232;
+
+  border-bottom: 1px solid rgba(0,0,0, 0.3);
+}
+
+.product-basket td {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.popup-basket p{
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color:#323232;
+}
+
+.user:hover >.popup {
+  display: block;
+}
+
+.user:hover {
+  background-color: #ffffff;
+}
+
+.user:hover a {
+  color:#323232;
+}
+
+.popup input:hover,
+.modal-feedback input:hover {
+  border: 2px solid #c7c6c5;
+}
+
+.popup input:focus,
+.modal-feedback input:focus {
+  font-size: 16px;
+  font-weight: 700;
+  color:#323232;
+
+  border: 2px solid #8fbdec;
+}
+
+.ordering-offline .time-work {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.ordering-offline .number {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
 
 
 

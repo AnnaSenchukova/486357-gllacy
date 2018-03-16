@@ -28,13 +28,13 @@
     </ul>
   </nav>
   <ul class="user-navigation" aria-label="Личные настройки">
-    <li class="search">
+    <li class="user search">
       <a href="#search">Поиск</a>
       <form class="popup popup-search" action="https://echo.htmlacademy.ru" method="post" name="search">
         <input type="search" name="search-field" placeholder="Что ищем?">
       </form>
     </li>
-    <li class="authorization" aria-label="Авторизуйтесь на сайте или пройдите регистрацию">
+    <li class="user authorization" aria-label="Авторизуйтесь на сайте или пройдите регистрацию">
       <a href="#authorisation">Вход</a>
       <form class="popup popup-authorization" action="https://echo.htmlacademy.ru" method="post" name="authorization">
         <input type="email" name="login" placeholder="Электронная почта">
@@ -46,7 +46,7 @@
         </div>
       </form>
     </li>
-    <li class="basket basket-empty basket-full">
+    <li class="user basket basket-empty basket-full">
       <a href="#basket-empty.html" aria-label="Сейчас в вашей корзине">Пусто</a>
     </li>
   </ul>
@@ -209,9 +209,9 @@
   <p>Сделано в HTML Academy &#64;2017</p></a>
   </p>
 </footer>
-<section class="modal modal-feedback" name="feedback-form">
-  <h2 class="visually-hidden">Форма обратной связи</h2>
-  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+<section class="modal" name="feedback-form">
+  <h2>Мы обязательно вам ответим!</h2>
+  <form class="modal-feedback" action="https://echo.htmlacademy.ru" method="post">
     <input type="text" name="name" placeholder="Как вас зовут?">
     <input type="email" name="email" placeholder="Ваша почта для ответа" required>
     <textarea name="comment" rows="10">Напишите что-нибудь...</textarea>

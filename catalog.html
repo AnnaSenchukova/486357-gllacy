@@ -29,13 +29,13 @@
     </ul>
   </nav>
   <ul class="user-navigation" aria-label="Личные настройки">
-    <li class="search">
+    <li class="user search">
       <a href="#search">Поиск</a>
       <form class="popup popup-search" name="search" action="https://echo.htmlacademy.ru" method="post">
         <input type="search" name="search-field" placeholder="Что ищем?">
       </form>
     </li>
-    <li class="authorization" aria-label="Авторизуйтесь на сайте или пройдите регистрацию">
+    <li class="user authorization" aria-label="Авторизуйтесь на сайте или пройдите регистрацию">
       <a href="#authorisation">Вход</a>
       <form class="popup popup-authorization" name="authorization" action="https://echo.htmlacademy.ru" method="post">
         <input type="email" name="login" placeholder="Электронная почта">
@@ -47,7 +47,7 @@
         </div>
       </form>
     </li>
-    <li class="basket basket-empty basket-full"aria-label="Корзина товаров">
+    <li class="user basket basket-empty basket-full"aria-label="Корзина товаров">
       <a href="#basket-full"aria-label="Нажмите что бы просмотреть товары в корзине">2 товара</a>
       <section class="popup popup-basket" name="basket-full">
         <h2 class="visually-hidden">Корзина с мороженным</h2>
@@ -101,7 +101,7 @@
       <legend>Цена: 100 руб. - 500 руб.</legend>
       <input class="visually-hidden" type="range" min="100" max="500" step="10">
     </fieldset>
-    <fieldset>
+    <fieldset class="fat-bar">
       <legend>Жирность:</legend>
       <input class="visually-hidden" type="radio" name="percentage" id="fat-0" value="fat-0">
       <label for="fat-0">0%</label>
