@@ -99,10 +99,13 @@
     </fieldset>
     <fieldset class="prise-bar">
       <legend>Цена: 100 руб. - 500 руб.</legend>
+      <div class="decoration">
       <input class="visually-hidden" type="range" min="100" max="500" step="10">
+      </div>
     </fieldset>
     <fieldset class="fat-bar">
-      <legend>Жирность:</legend>
+     <legend>Жирность:</legend>
+      <div class="decoration">
       <input class="visually-hidden" type="radio" name="percentage" id="fat-0" value="fat-0">
       <label for="fat-0">0%</label>
       <input class="visually-hidden" type="radio" name="percentage" id="fat-10" value="fat-10" checked>
@@ -111,9 +114,11 @@
       <label for="fat-30">до 30%</label>
       <input class="visually-hidden" type="radio" name="percentage" id="fat-over-30" value="fat-over-30">
       <label for="fat-over-30">выше 30%</label>
+      </div>
     </fieldset>
     <fieldset class="toppings">
       <legend>Наполнители:</legend>
+      <div class="decoration">
       <input class="visually-hidden" type="checkbox" name="toppings-chocolate" id="toppings-chocolate-id" checked>
       <label for="toppings-chocolate-id">шоколадные</label>
       <input class="visually-hidden" type="checkbox" name="toppings-sugar" id="topping-sugar-id" checked>
@@ -124,13 +129,14 @@
       <label for="topping-syrip-id">сиропы</label>
       <input class="visually-hidden" type="checkbox" name="toppings-jam" id="topping-jam-id">
       <label for="topping-jam-id">джемы</label>
+      </div>
     </fieldset>
     <button type="submit" name="apply-filter">Применить</button>
   </form>
   <section class="catalog">
     <h2 class="visually-hidden">Каталог товаров</h2>
     <ul class="catalog-list">
-      <li class="catalog-item preview" aria-label="Карточка товара">
+      <li class="catalog-item" aria-label="Карточка товара">
         <img src="img/catalog_item_orange.jpg" width="267" height="267"
              alt="шарик мороженного: сливочного с апельсиновым джемом и цитрусовой стружкой">
         <span class="price" aria-label="Цена за килограмм">310&#8381;</span>
@@ -138,7 +144,7 @@
         <h3><a href="gllacy_orange.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
         <a href="#" class="button preview">Быстрый просмотр</a>
       </li>
-      <li class="catalog-item preview" aria-label="Карточка товара">
+      <li class="catalog-item" aria-label="Карточка товара">
         <img src="img/catalog_item_cofe.jpg" width="267" height="267"
              alt="шарик мороженного: сливочно-кофейного с кусочками шоколада">
         <span class="price" aria-label="Цена за килограмм">380&#8381;</span>
@@ -146,7 +152,7 @@
         <h3><a href="gllacy_cofe.html">Сливочно-кофейное с кусочками шоколада</a></h3>
         <a href="#" class="button preview">Быстрый просмотр</a>
       </li>
-      <li class="catalog-item preview" aria-label="Карточка товара">
+      <li class="catalog-item" aria-label="Карточка товара">
         <img src="img/catalog_item_strawberries.jpg" width="267" height="267"
              alt="шарик мороженного:сливочно-клубничного с присыпкой из белого шоколада">
         <span class="price" aria-label="Цена за килограмм">355&#8381;</span>
@@ -154,7 +160,7 @@
         <h3><a href="gllacy_strawberry.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
         <a href="#" class="button preview">Быстрый просмотр</a>
       </li>
-      <li class="catalog-item preview" aria-label="Картока товара">
+      <li class="catalog-item" aria-label="Картока товара">
         <img src="img/catalog_item_cream_brulee.jpg" width="267" height="267"
              alt="шарик мороженного: сливочного крем-брюле с карамельной подливкой">
         <span class="price" aria-label="Цена за килограмм">415&#8381;</span>
@@ -162,7 +168,7 @@
         <h3><a href="gllacy_cream_brulee.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
         <a href="#" class="button preview">Быстрый просмотр</a>
       </li>
-      <li class="catalog-item preview" aria-label="Карточка товара">
+      <li class="catalog-item" aria-label="Карточка товара">
         <img src="img/catalog_item_cranberries.jpg" width="267" height="267"
              alt="шарик мороженного: сливочного с брусничным джемом">
         <span class="price" aria-label="Цена за килограмм">325&#8381;</span>
@@ -170,7 +176,7 @@
         <h3><a href="gllacy_cranberries.html">Сливочное с брусничным джемом</a></h3>
         <a href="#" class="button preview">Быстрый просмотр</a>
       </li>
-      <li class="catalog-item preview" aria-label="Карточка товара">
+      <li class="catalog-item" aria-label="Карточка товара">
         <img src="img/catalog_item_blueberries.jpg" width="267" height="267"
              alt="шарик мороженного: сливочно-черничного с цульными ягодами черники">
         <span class="price" aria-label="Цена за килограмм">410&#8381;</span>
@@ -178,7 +184,7 @@
         <h3><a href="gllacy_blueberries.html">Сливочно-черничное с цельными ягодами черники</a></h3>
         <a href="#" class="button preview">Быстрый просмотр</a>
       </li>
-      <li class="catalog-item preview" aria-label="Карточка товара">
+      <li class="catalog-item" aria-label="Карточка товара">
         <img src="img/catalog_item_lemon_caramel.jpg" width="267" height="267"
              alt="шарик мороженного: сливочно-лимонного с карамельной присыпкой">
         <span class="price" aria-label="Цена за килограмм">375&#8381;</span>
@@ -186,7 +192,7 @@
         <h3><a href="gllacy_lemon_caramel.html">Сливочно-лимонное с карамельной присыпкой</a></h3>
         <a href="#" class="button preview">Быстрый просмотр</a>
       </li>
-      <li class="catalog-item preview" aria-label="Карточка товара">
+      <li class="catalog-item" aria-label="Карточка товара">
         <img src="img/catalog_item_chocolate.jpg" width="267" height="267"
              alt="шарик мороженного: сливочного с шоколадной стружкой">
         <span class="price" aria-label="Цена за килограмм">320&#8381;</span>
@@ -194,7 +200,7 @@
         <h3><a href="gllacy_chocolate.html">Сливочное с шоколадной стружкой</a></h3>
         <a href="#" class="button preview">Быстрый просмотр</a>
       </li>
-      <li class="catalog-item preview" aria-label="Карточка товара">
+      <li class="catalog-item" aria-label="Карточка товара">
         <img src="img/catalog_item_vanilla.jpg" width="267" height="267"
              alt="шарик мороженного: сливочно-ванильного с кусочками шоколада">
         <span class="price" aria-label="Цена за килограмм">440&#8381;</span>
@@ -202,7 +208,7 @@
         <h3><a href="gllacy_vanilla.html">Сливочно-ванильное с кусочками шоколада</a></h3>
         <a href="#" class="button preview">Быстрый просмотр</a>
       </li>
-      <li class="catalog-item preview" aria-label="Карточка товара">
+      <li class="catalog-item" aria-label="Карточка товара">
         <img src="img/catalog_item_menthol.jpg" width="267" height="267"
              alt="шарик мороженного: сливочного с ментоловым сиропом">
         <span class="price" aria-label="Цена за килограмм">435&#8381;</span>
@@ -210,7 +216,7 @@
         <h3><a href="gllacy_menthol.html">Сливочноe с ментоловым сиропом</a></h3>
         <a href="#" class="button preview">Быстрый просмотр</a>
       </li>
-      <li class="catalog-item preview" aria-label="Карточка товара">
+      <li class="catalog-item" aria-label="Карточка товара">
         <img src="img/catalog_item_darkchocolate.jpg" width="267" height="267"
              alt="шарик мороженного: сливочного с кусочками черного шоколада">
         <span class="price" aria-label="Цена за килограмм">355&#8381;</span>
@@ -218,7 +224,7 @@
         <h3><a href="gllacy_darkchocolate.html">Сливочное с кусочками черного шоколада</a></h3>
         <a href="#" class="button preview">Быстрый просмотр</a>
       </li>
-      <li class="catalog-item preview" aria-label="Карточка товара">
+      <li class="catalog-item" aria-label="Карточка товара">
         <img src="img/catalog_item_mint.jpg" width="267" height="267"
              alt="шарик мороженного: сливочного с мятным сиропом">
         <span class="price" aria-label="Цена за килограмм">420&#8381;</span>
@@ -239,7 +245,7 @@
   </div>
 </main>
 <footer class="main-footer">
-  <ul class="social">
+  <ul class="social" aria-label="Найти нас в соцсетях">
     <li><a class="social-button tw" href="twitter.com">Твиттер</a></li>
     <li><a class="social-button inst" href="instagram.com">Инстаграмм</a></li>
     <li><a class="social-button fb" href="fasebook.com">Фейсбук</a></li>
@@ -252,8 +258,8 @@
     <li><a class="info-eco" href="info-eco.html">Экологические стандарты</a></li>
   </ul>
   <p class="footer-copyright">
-    <a class="button" href="http://htmlacademy.ru">HTML Academy
-  <p>Сделано в HTML Academy &#64;2017</p></a>
+    <a class="button-academy" href="http://htmlacademy.ru">HTML Academy
+  <p>Сделано в <b>HTML Academy</b> &#64;2017</p></a>
   </p>
 </footer>
 </body>
