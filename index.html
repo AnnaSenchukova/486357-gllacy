@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
 </head>
 <body>
+<input class="visually-hidden radio" type="radio" id="product-1" name="toggle" checked>
+<input class="visually-hidden radio" type="radio" id="product-2" name="toggle">
+<input class="visually-hidden radio" type="radio" id="product-3" name="toggle">
+<div class="site-wrapper">
+  <div class="container">
 <header class="main-header" >
   <div class="structure-navigation">
   <nav class="main-navigation" aria-label="Навигация по сайту">
@@ -61,29 +66,25 @@
 </header>
 <main>
   <h1 class="visually-hidden">Магазин мороженного Gllacy Shop</h1>
-  <section class="sale">
+  <section class="slider">
     <h2 class="visually-hidden">Скидки и акции</h2>
-    <ul class="sale-slider" aria-label="Акция: двойная выгода!">
-      <li class="sale-item brulee-raspberry" aria-label="Информация об акции">
-        <img src="img/home_sale_brulee_raspberry.jpg" width="1050" height="850"
-             alt="Два рожка: крем-брюле и пломбир с малиновым джемом">
-        <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+    <div class="slider-controls">
+      <label for="product-1">Первый слайд</label>
+      <label for="product-2">Второй слайд</label>
+      <label for="product-3">Третий слайд</label>
+    </div>
+    <ul class="slider-list" aria-label="Акция: двойная выгода!">
+      <li class="slider-item  slide" id="brulee-raspberry" aria-label="Информация об акции">
+        <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
         <a class="button sale-button" href="brulee-raspberry.html">Давайте оба!</a>
-        <button class="slider-button" type="button">Первый слайд</button>
       </li>
-      <li class="sale-item chocolate-lemon" aria-label="Информация об акции">
-        <img src="img/home_sale_chocolate_lemon.jpg" width="1050" height="850"
-             alt="Два рожка: шоколадный пломбир и лимонный сорбет">
-        <h3>Шоколадный пломбир и лимонный сорбет</h3>
+      <li class="slider-item  slide" id="chocolate-lemon" aria-label="Информация об акции">
+        <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
         <a class="button sale-button" href="chocolate-lemon.html">Давайте оба!</a>
-        <button class="slider-button" type="button">Второй слайд</button>
       </li>
-      <li class="sale-item fudre-strawberry" aria-label="Информация об акции">
-        <img src="img/home_sale_fudre-strawberry.jpg" width="1050" height="850"
-             alt="Два рожка: пломбир с помадкой и клубничный щербет">
-        <h3>Пломбир с помадкой и клубничный щербет</h3>
-        <a class="button sale-button" href="fudre-strawberry.html">Давайте оба!</a>
-        <button class="slider-button" type="button">Третий слайд</button>
+      <li class="slider-item  slide" id="fudre-strawberry" aria-label="Информация об акции">
+        <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+        <a class="button slider-button" href="fudre-strawberry.html">Давайте оба!</a>
       </li>
     </ul>
   </section>
@@ -139,22 +140,22 @@
   <div class="about-us">
     <b>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</b>
     <ul class="about-us-list" aria-label="Преимущества магазина Gllasy Shop">
-      <li class="about-us-item icon">
+      <li class="about-us-item icon-ice">
         <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
           оборудования и проверенных временем технологий.</p>
       </li>
-      <li class="about-us-item icon">
-        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
-          Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-        </p>
-      </li>
-      <li class="about-us-item icon">
+      <li class="about-us-item icon-cow">
         <p>
           Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
           с которыми нас связывает долговременное сотрудничество.
         </p>
       </li>
-      <li class="about-us-item icon">
+      <li class="about-us-item icon-leaf">
+        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+          Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+        </p>
+      </li>
+      <li class="about-us-item icon-thermometer">
         <p>
           Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
           который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
@@ -249,5 +250,7 @@
     <button class="modal-close" type="button">Закрыть форму</button>
   </form>
 </section>
+  </div>
+</div>
 </body>
 </html>

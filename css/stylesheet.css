@@ -228,24 +228,7 @@ a {
   font-weight: 700;
 }
 
-.sale-item h3 {
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 700;
-}
 
-.brulee-raspberry {
-  background-color: #849d8f;
-}
-
-
-.chocolate-lemon {
-  background-color: #8996a6;
-}
-
-.fudre-strawberry {
-  background-color: #9d8b84;
-}
 
 .stock-jam {
   background-image: url("../img/home_stock_jam_bg.jpg");
@@ -561,9 +544,164 @@ a {
 
 
 
-.sale,
+
 .modal{
   display: none;
+}
+
+.visually-hidden.radio {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  clip: rect(0, 0, 0, 0);
+}
+
+
+.site-wrapper {
+  width: 100%;
+  background-color: #849d8f;
+  background-image: url("../img/home_sale_brulee_raspberry.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("../img/home_sale_chocolate_lemon.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/home_sale_fudre-strawberry.png");
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.slider {
+  position: relative;
+
+  padding-top: 321px;
+
+  text-align: center;
+  color:#ffffff;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+}
+
+.slider-button {
+  display: inline-block;
+  padding: 12px 44px;
+
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+
+  cursor: pointer;
+}
+
+.slider-button:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+#product-1:checked ~ .site-wrapper #brulee-raspberry,
+#product-2:checked ~ .site-wrapper #chocolate-lemon,
+#product-3:checked ~ .site-wrapper #fudre-strawberry {
+  display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/home_sale_brulee_raspberry.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/home_sale_chocolate_lemon.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/home_sale_fudre-strawberry.png");
 }
 
 
@@ -705,6 +843,7 @@ a {
   border-radius: 20px 20px;
 }
 
+
 .structure {
   width: 1146px;
 
@@ -712,6 +851,7 @@ a {
   margin-right: auto;
 
   margin-bottom: 40px;
+  margin-top: 40px;
 
   display: flex;
   flex-direction: row;
@@ -800,7 +940,8 @@ a {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 20px 0px;
+
 
   box-sizing: border-box;
 
@@ -812,23 +953,85 @@ a {
   background-repeat: repeat-x;
 }
 
+.about-us b {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
 .about-us-list {
-  width: 1095px;
+  width: 1106px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0px;
 
-height: 209px;
+  padding: 0;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: flex-end;
+  align-content: space-between;
+  align-items: flex-start;
+
+  background-color: #8fbdec;
 }
 
 .about-us-item {
   width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us-item p{
+  padding-left: 57px;
+
+}
+
+.icon-ice:before {
+  content: "";
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/home_about_us_icon_icecream.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.icon-cow:before {
+  content: "";
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/home_about_us_icon_cow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.icon-leaf:before {
+  content: "";
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/home_about_us_icon_leaf.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.icon-thermometer:before {
+  content: "";
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/home_about_us_icon_thermometer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 
@@ -930,7 +1133,7 @@ height: 209px;
   margin-right: auto;
 
   margin-top: 20px;
-  margin-bottom: 35px;
+  padding-bottom: 35px;
 
   display: flex;
   flex-direction: row;
@@ -1088,6 +1291,7 @@ height: 209px;
   background-image: url("../img/catalog_bar_button_radio_off.svg");
   background-repeat: no-repeat;
   background-position: 0px 0px;
+
 }
 
 .fat-bar label {
