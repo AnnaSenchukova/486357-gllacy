@@ -12,9 +12,9 @@
 <input class="visually-hidden radio" type="radio" id="product-2" name="toggle">
 <input class="visually-hidden radio" type="radio" id="product-3" name="toggle">
 <div class="site-wrapper">
-  <div class="container">
+
 <header class="main-header" >
-  <div class="structure-navigation">
+<div class="container">
   <nav class="main-navigation" aria-label="Навигация по сайту">
     <a class="logo">
       <img src="img/header_logo.svg" width="154" height="64" alt="Логотип GlassyShop">
@@ -32,7 +32,6 @@
       <li class="site-item"><a href="delivery.html">Доставка и оплата</a></li>
       <li class="site-item"><a href="about_us.html">О Компании</a></li>
     </ul>
-  </nav>
   <ul class="user-navigation" aria-label="Личные настройки">
     <li class="user search">
       <a href="#search">Поиск</a>
@@ -58,13 +57,15 @@
       <a href="#basket-empty.html" aria-label="Сейчас в вашей корзине">Пусто</a>
     </li>
   </ul>
-  </div>
+</nav>
   <div class="ordering-offline" aria-label="Вы можете связаться с нами и оформить заказ оффлайн">
     <span class="time-work">с 10 до 20, ежедневно</span>
     <span class="number" aria-label="По телефону">8 812 450-25-25</span>
   </div>
+</div>
 </header>
 <main>
+  <div class="container">
   <h1 class="visually-hidden">Магазин мороженного Gllacy Shop</h1>
   <section class="slider">
     <h2 class="visually-hidden">Скидки и акции</h2>
@@ -180,13 +181,15 @@
       </form>
     </section>
     </div>
-  <div class="structure-map">
-  <div class="structure-contacts">
+  </div>
+<div class="structure-contacts">
   <section class="map">
     <h2 class="visually-hidden">Карта</h2>
     <img class="map-pointer" src="img/home_map_pointer.png" width="80" height="140"
          alt="Наш адрес: ул. Большая Конюшенная 19/8, Санкт-Петербург">
   </section>
+
+    <div class="container contacts-wrapper">
   <section class="contacts">
     <h2 class="visually-hidden">Контактная информация</h2>
     <p class="address">Адрес главного офиса<br> и офлайн-магазина<br>
@@ -196,10 +199,12 @@
       (с 10 до 20 ежедневно)</p>
     <a class="button" href="#feedback-form">Форма обратной связи</a>
   </section>
+    </div>
 </div>
-  </div>
 </main>
+
 <footer class="main-footer">
+  <div class="container footer-wrapper">
   <ul class="social" aria-label="Найти нас в соцсетях">
     <li><a class="social-button tw" href="https://twitter.com"><span class="visually-hidden">Твиттер</span>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -226,8 +231,8 @@
   </ul>
   <ul class="info" aria-label="Полезная информация">
     <li><a class="info-suppliers" href="info-suppliers">Для поставщиков</a></li>
-    <li><a class="info-technology" href="info-technology.html">О производстве</a></li>
     <li><a class="info-documents" href="info-documents.html">Наши документы</a></li>
+    <li><a class="info-technology" href="info-technology.html">О производстве</a></li>
     <li><a class="info-eco" href="info-eco.html">Экологические стандарты</a></li>
   </ul>
   <div class="footer-copyright">
@@ -239,7 +244,9 @@
   <p>Сделано в <b>HTML Academy</b> &#64;2017</p>
   </a>
   </div>
+  </div>
 </footer>
+
 <section class="modal" name="feedback-form">
   <h2>Мы обязательно вам ответим!</h2>
   <form class="modal-feedback" action="https://echo.htmlacademy.ru" method="post">
@@ -250,7 +257,7 @@
     <button class="modal-close" type="button">Закрыть форму</button>
   </form>
 </section>
-  </div>
-</div>
+
+
 </body>
 </html>
