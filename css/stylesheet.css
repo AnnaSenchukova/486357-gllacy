@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -59,19 +67,22 @@ img {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .main-navigation a {
   color: #ffffff;
 }
 
+.logo {
+  padding-top: 9px;
+}
+
 .site-navigation {
-  width: 992px;
+  margin: 0;
+
+  outline: 1px solid;
+
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .site-navigation>li:not(:last-child) {
@@ -82,7 +93,6 @@ img {
   line-height: 18px;
   font-weight: 700;
 
-  border-bottom: 1px solid #b0c0b7;
 }
 
 .site-item>a:hover,
@@ -110,20 +120,19 @@ img {
   display: none;
 
   position: absolute;
+  top: 90%;
   left: 0px;
 
   width: 145px;
 
-  margin-top: 15px;
+
   padding: 5px;
 
   background-color: #ffffff;
   border-radius: 5px;
 }
 
-.submenu li {
-  padding: 13px 0px;
-}
+
 
 .submenu a {
   font-size: 14px;
@@ -168,6 +177,9 @@ img {
 
 
 .user-navigation {
+  margin: 0;
+  margin-left: auto;
+
   display: flex;
   align-items: center;
 }
@@ -201,6 +213,9 @@ img {
 .site-item,
 .user{
   position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -210,6 +225,7 @@ img {
 .popup {
   box-sizing: border-box;
   position: absolute;
+  top: 90%;
   right: 0px;
 
   display: none;
@@ -660,6 +676,7 @@ img {
   align-content: space-between;
 }
 
+
 .catalog-item {
   width: 267px;
   margin-right: 25px;
@@ -679,12 +696,17 @@ img {
   color:#ffffff;
 }
 
+
 .catalog-item .price,
 .catalog-item .weight {
-  font-size:45px;
+  font-size: 45px;
   line-height: 1px;
   font-weight: 600;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+
+  margin: 5px 0px;
+  display: block;
+  position: absolute;
 }
 
 .catalog-item .weight {
