@@ -67,6 +67,8 @@ img {
 
 .main-navigation {
   display: flex;
+
+  border: 1px solid;
 }
 
 .main-navigation a {
@@ -79,8 +81,12 @@ img {
 
 .site-navigation {
   margin: 0;
+  margin-right: auto;
+  padding: 0;
+
   display: flex;
-  box-sizing: border-box;
+
+  outline: 1px solid;
 }
 
 .site-navigation>li:not(:last-child) {
@@ -89,10 +95,9 @@ img {
 
 
 
-
-
-.site-item>a{
-  padding: 0 15px;
+.site-item>a {
+  display: block;
+  padding: 10px 16px;
 
   line-height: 18px;
   font-weight: 700;
@@ -100,13 +105,35 @@ img {
   border-bottom: 1px solid rgba(255,255,255, 0.2);
 }
 
-.site-item>a:hover,
+.site-item:hover>a {
+  color:#323232;
+
+  background-color: #ffffff;
+  border-bottom: 0px;
+  border-radius: 20px 20px;
+}
+
 .site-item>a:active{
+  background-color: rgb(248, 247, 244);
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+}
+
+/*
+
+.site-item>a{
+  display: block;
   padding: 10px 15px;
 
-  color: #323232;
+  line-height: 18px;
+  font-weight: 700;
 
-  border-bottom: none;
+  background-color: rgba(255,255,255, 0.2);
+  border-radius: 20px 20px;
+}
+
+
+.site-item>a:hover  {
+
   background-color:#ffffff;
   border-radius: 20px 20px;
 }
@@ -116,46 +143,57 @@ img {
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 
+.site-item>a:hover,
+.site-item>a:active{
+  color: #323232;
+
+  border-bottom: none;
+}
+*/
 .site-item:hover .submenu {
   display: block;
 }
 
 .submenu {
-  box-sizing: border-box;
-  display: none;
-
   position: absolute;
   top: 90%;
   left: 0px;
 
+  display: none;
+
+  padding: 0;
+
   width: 145px;
-
-
-  padding: 5px;
 
   background-color: #ffffff;
   border-radius: 5px;
 }
 
+.submenu li {
+  padding: 8px 21px;
+}
 
+.submenu li:first-child  {
+  padding: 13px 0;
+}
 
 .submenu a {
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #323232;
 }
 
-.submenu li:first-child {
+.submenu li:first-child a {
+  margin: 0 6px;
+  padding: 15px;
+  padding-right: 57px;
+
   color: #323232;
   font-weight: 700;
 
   border-bottom: 1px solid #d1d0ce;
-}
-
-.submenu li:first-child a {
-  color: #323232;
-  font-weight: 700;
 }
 
 .submenu li:hover {
