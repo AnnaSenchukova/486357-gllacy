@@ -235,7 +235,7 @@ img {
 
 .user>a {
   display: block;
-  padding: 10px 16px;
+  padding: 6px 16px;
 
   font-size: 14px;
   line-height: 16px;
@@ -261,6 +261,61 @@ img {
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+.search a {
+  padding: 7px ;
+  margin: 0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.search>a::before {
+  content: url("../img/header_search_icon.svg");
+}
+
+.authorization>a::before {
+  content: url("../img/header_autorization_icon.svg");
+  display: inline-block;
+  vertical-align: middle;
+
+  padding-right: 8px;
+}
+
+.basket a{
+  width: 119px;
+}
+
+.basket-empty>a::before {
+  content: url("../img/header_basket_icon_empty.svg");
+  padding-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+ .basket-full>a{
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.basket-full>a::before {
+  content: url("../img/header_basket_icon_full.svg");
+  padding-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search:hover>a::before {
+  content: url("../img/header_search_icon_hover.svg");
+}
+
+.authorization:hover>a::before {
+  content: url("../img/header_autorization_icon_hover.svg");
+}
+
+.basket-empty:hover>a::before {
+  content: url("../img/header_basket_icon_empty_hover.svg");
 }
 
 
@@ -320,11 +375,9 @@ img {
 
 
 
-.search input{
+.popup-search input{
   margin: 0px;
 }
-
-
 
 
 .structure-authorization {
@@ -496,6 +549,7 @@ img {
 .crumbs li:not(:last-child) {
   padding-right: 22px;
 }
+
 
 .crumbs a {
   font-size: 14px;
@@ -678,17 +732,17 @@ img {
 
 .stock-jam,
 .stock-chocolate {
-  padding:22px;
+  padding:23px 20px;
 }
 
 .stock-jam {
   background-image: url("../img/home_stock_jam_bg.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 .stock-chocolate {
   background-image: url("../img/home_stock_chocolate_bg.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 .stock-jam h3,
@@ -703,6 +757,8 @@ img {
 
 .stock-jam h3,
 .stock-chocolate h3 {
+  padding-bottom: 17px;
+
   font-size:35px;
   line-height: 41px;
   font-weight: 700;
@@ -712,6 +768,13 @@ img {
 .stock-chocolate p {
   font-size: 18px;
   font-weight: 700;
+}
+
+.structure-stock {
+  display: flex;
+  justify-content: flex-end;
+
+  padding-top: 40px;
 }
 
 
@@ -1127,6 +1190,22 @@ img {
   border-bottom: 1px solid rgba(255,188,158, 0.3);
 }
 
+.info-suppliers {
+  position: relative;
+}
+
+.info-suppliers::before {
+  content: url("../img/footer_heart_icon.svg");
+
+  position: absolute;
+  left: -20%;
+  bottom: -30%;
+}
+
+.info-suppliers:hover::before {
+  content: url("../img/footer_heart_icon_hover.svg");
+}
+
 .footer-copyright {
   width: 30%;
 
@@ -1147,6 +1226,11 @@ img {
 
 .button-academy b {
   border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+.button-academy b:hover {
+  color:#ffbc9e;
+  border-bottom: 1px solid rgba(255,188,158, 0.3);
 }
 
 
@@ -1250,6 +1334,7 @@ img {
   background-image: url("../img/catalog_bar_button_radio_off.svg");
   background-repeat: no-repeat;
   background-position: 0px 0px;
+  opacity: 0.8;
 
 }
 
@@ -1259,22 +1344,49 @@ img {
   margin-right: 17px;
 }
 
-.toppings label::before {
+ .toppings label::before {
   content: "";
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
 
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/catalog_bar_button_checkbox_off.svg");
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-}
+   width: 25px;
+   height: 25px;
+   background-image: url("../img/catalog_bar_button_checkbox_off.svg");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   opacity: 0.8;
+ }
 
 .toppings label {
   margin-right: 17px;
 }
+
+.fat-bar input:checked::before {
+  content: url("../img/catalog_bar_button_radio_on.svg");
+  opacity: 0.8;
+}
+
+.toppings input:checked::before{
+  content: url("../img/catalog_bar_button_checkbox_on.svg");
+  opacity: 0.8;
+}
+
+.fat-bar label:hover::before,
+.toppings label:hover::before,
+.fat-bar input:checked::before,
+.toppings input:checked::before{
+  opacity: 1;
+}
+
+.fat-bar label:disabled::before,
+.toppings label:disabled::before,
+.fat-bar input:checked::before,
+.toppings input:checked::before {
+  opacity: 0.4;
+}
+
+
 
 .bar button {
   display: inline-block;

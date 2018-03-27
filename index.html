@@ -36,7 +36,7 @@
     </ul>
   <ul class="user-navigation" aria-label="Личные настройки">
     <li class="user search">
-      <a href="#search">Поиск</a>
+      <a href="#search"><span class="visually-hidden">Поиск</span></a>
       <form class="popup popup-search" action="https://echo.htmlacademy.ru" method="post" name="search">
         <input type="search" name="search-field" placeholder="Что ищем?">
       </form>
@@ -55,7 +55,7 @@
         </div>
       </form>
     </li>
-    <li class="user basket basket-empty basket-full">
+    <li class="user basket basket-empty">
       <a href="#basket-empty.html" aria-label="Сейчас в вашей корзине">Пусто</a>
     </li>
   </ul>
@@ -96,12 +96,16 @@
     <section class="stock-jam" aria-label="Информация об акции: малинка даром!">
       <h3>Малинка даром!</h3>
       <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ малинового варенья бесплатно.</p>
-      <a class="button" href="jam.html">Хочу варенья!</a>
+      <div class="structure-stock">
+      <a class="button stock-button" href="jam.html">Хочу варенья!</a>
+      </div>
     </section>
     <section class="stock-chocolate" aria-label= "Информация об акции: шоколадки даром!">
       <h3>Шоколадки даром!</h3>
       <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
-      <a class="button" href="chocolate.html">Хочу шоколадки!</a>
+      <div class="structure-stock">
+      <a class="button stock-button" href="chocolate.html">Хочу шоколадки!</a>
+      </div>
     </section>
   </div>
   <section class="catalog" aria-label="Каталог нашей продукции">
