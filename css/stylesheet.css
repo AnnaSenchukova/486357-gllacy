@@ -110,7 +110,7 @@ img {
   left: 15%;
   bottom: 26%;
 
-  width: 100%;
+  width: 75%;
   height: 1px;
 
   background-color:rgba(255,255,255, 0.2);
@@ -1494,7 +1494,68 @@ display: inline-block;
   border-radius: 30px;
 }
 
-.fat-bar label::before {
+.prise-range {
+  position:relative;
+
+  height:36px;
+  padding-top: 16px;
+  padding-right: 21px;
+  padding-left: 21px;
+
+  background-color: rgba(255,255,255, 0.2);
+  border-radius: 30px;
+}
+
+.prise-range .range-scale {
+  position: relative;
+  height: 4px;
+
+  background-color: rgba(255,255,255, 0.5);
+}
+
+
+.prise-range .range-bar {
+position: absolute;
+  left:20%;
+  height: 4px;
+  width: 60%;
+
+  background-color: #ffffff;
+}
+
+.prise-range .toggle {
+  position: absolute;
+  top: 20%;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+}
+
+.prise-range .toggle-min {
+  left: 20%;
+}
+
+.prise-range .toggle-max {
+  left: 70%;
+}
+
+
+
+
+.fat-bar label {
+  position: relative;
+  display: inline-block;
+  vertical-align: center;
+  margin-right: 17px;
+}
+
+.bar-radio + label::before {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -1507,33 +1568,11 @@ display: inline-block;
   background-position: 0px 0px;
   opacity: 0.8;
 
+
 }
 
-.fat-bar label {
-  display: inline-block;
-  vertical-align: center;
-  margin-right: 17px;
-}
 
- .toppings label::before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-
-   width: 25px;
-   height: 25px;
-   background-image: url("../img/catalog_bar_button_checkbox_off.svg");
-   background-repeat: no-repeat;
-   background-position: 0 0;
-   opacity: 0.8;
- }
-
-.toppings label {
-  margin-right: 17px;
-}
-
-.fat-bar input:checked::before {
+.bar-radio:checked + label::after {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -1546,9 +1585,33 @@ display: inline-block;
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.8;
+
+
+  position:absolute;
+  left: 0;
 }
 
-.toppings input:checked::before{
+.toppings label {
+  margin-right: 17px;
+  position: relative;
+}
+
+
+.bar-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/catalog_bar_button_checkbox_off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.8;
+}
+
+.bar-checkbox:checked +label::after {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -1561,22 +1624,26 @@ display: inline-block;
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.8;
+
+
+  position:absolute;
+  left: 0;
 }
 
-.fat-bar label:hover::before,
-.toppings label:hover::before,
-.fat-bar input:checked::before,
-.toppings input:checked::before{
+
+.bar-radio:hover + label::before,
+.bar-checkbox:hover + label::before,
+.bar-radio:hover + label::after,
+.bar-checkbox:hover + label::after {
   opacity: 1;
 }
 
-.fat-bar label:disabled::before,
-.toppings label:disabled::before,
-.fat-bar input:checked::before,
-.toppings input:checked::before {
+.bar-radio:disabled + label::before,
+.bar-checkbox:disabled + label::before,
+.bar-radio:disabled + label::after,
+.bar-checkbox:disabled + label::after {
   opacity: 0.4;
 }
-
 
 
 .bar button {
