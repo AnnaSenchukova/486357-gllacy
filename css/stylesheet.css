@@ -21,6 +21,7 @@ body {
 
 a {
   text-decoration: none;
+
 }
 
 img {
@@ -76,6 +77,7 @@ img {
 
 .logo {
   padding-top: 9px;
+  padding-right: 8px;
 }
 
 .site-navigation {
@@ -87,7 +89,7 @@ img {
 }
 
 .site-navigation>li:not(:last-child) {
-  margin-right: 15px;
+  margin-right: -4px;
 }
 
 
@@ -106,9 +108,9 @@ img {
   content: " " ;
   position: absolute;
   left: 15%;
-  bottom: 20%;
+  bottom: 26%;
 
-  width: 60px;
+  width: 100%;
   height: 1px;
 
   background-color:rgba(255,255,255, 0.2);
@@ -210,7 +212,7 @@ img {
 }
 
 .user:not(:last-child){
-  padding-right: 10px;
+  padding-right: 8px;
 }
 
 .user>a {
@@ -288,6 +290,7 @@ img {
 .basket-empty>a::before {
   content: "";
   margin-right: 8px;
+  margin-left: 2px;
 
   width: 21px;
   height: 20px;
@@ -309,6 +312,7 @@ img {
   content: "";
 
   margin-right: 8px;
+  margin-left: 2px;
 
   width: 21px;
   height: 20px;
@@ -564,12 +568,15 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: -6px;
 }
 
 .ordering-offline .time-work {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  margin-bottom: 4px;
+
 }
 
 .ordering-offline .number {
@@ -666,7 +673,7 @@ img {
 .slider {
   position: relative;
 
-  margin-top: 321px;
+  margin-top: 275px;
   margin-bottom: 40px;
 
 
@@ -688,17 +695,17 @@ img {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 
   font-size: 60px;
   line-height: 60px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 10%;
   left: 0;
   z-index: 20;
 
@@ -707,8 +714,8 @@ img {
 
 .slider-controls label {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 21px;
+  height: 21px;
   margin-right: 8px;
 
   vertical-align: top;
@@ -779,7 +786,9 @@ img {
 
 .stock-jam,
 .stock-chocolate {
-  padding:23px 20px;
+  padding:0 19px;
+  padding-top: 17px;
+  padding-bottom: 24px;
 }
 
 .stock-jam {
@@ -804,7 +813,7 @@ img {
 
 .stock-jam h3,
 .stock-chocolate h3 {
-  padding-bottom: 17px;
+  padding-bottom: 14px;
 
   font-size:35px;
   line-height: 41px;
@@ -815,13 +824,14 @@ img {
 .stock-chocolate p {
   font-size: 18px;
   font-weight: 700;
+  text-align: justify;
 }
 
 .structure-stock {
   display: flex;
   justify-content: flex-end;
 
-  padding-top: 40px;
+  padding-top: 45px;
 }
 
 
@@ -856,7 +866,7 @@ img {
 
 .catalog-item img{
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   border-radius: 50%;
 
 }
@@ -873,35 +883,41 @@ img {
 .catalog-item .weight {
   position: absolute;
   display: inline-block;
-
+  z-index: 1;
 
   font-size: 45px;
   line-height: 1px;
-  font-weight: 600;
+  font-weight: 1000;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .catalog-item .price {
   position: absolute;
   left: 0;
-  bottom:27%;
+  bottom:23.8%;
 }
 
 .price::after {
   content: "";
+  z-index: 1;
 
   width: 28px;
-  height: 31px;
+  height: 33px;
+
+  margin-left: 3px;
 
   display: inline-block;
   background-image: url("../img/catalog_prise_ruble.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .catalog-item .weight {
-  bottom: 30%;
-  left: 40%;
+  bottom: 27%;
+  left: 42%;
 
   font-size: 30px;
+
 }
 
 .hit::before {
@@ -915,7 +931,7 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
 
-
+  z-index: 1;
 }
 
 .catalog-item .button{
@@ -924,10 +940,11 @@ img {
   bottom: -20%;
   left: 10%;
 
+  z-index: 3;
 
 }
 
-.catalog-item::before {
+.catalog-item::after {
   content: " ";
   width: 293px;
   height: 405px;
@@ -939,10 +956,13 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   display: none;
- z-index: 1;
+
+  z-index: 2;
+
 }
 
-.catalog-item:hover::before {
+.catalog-item:hover::after,
+.catalog-item:hover .preview {
 display: block;
 }
 
@@ -966,6 +986,7 @@ display: block;
 
   margin-bottom: 40px;
   padding-bottom: 10px;
+  padding-top: 3px;
 
   background-color: #ffffff;
   background-image: url("../img/home_about_us_bg.jpg");
@@ -978,6 +999,9 @@ display: block;
 .about-us b {
   display: inline-block;
   padding: 20px;
+  padding-bottom: 8px;
+
+  letter-spacing: 0.2px;
 
   font-size: 24px;
   line-height: 30px;
@@ -987,6 +1011,8 @@ display: block;
 .about-us-list {
   padding: 0px;
   margin: 0px 20px;
+  margin-bottom: 5px;
+  margin-right: -5px;
 
   display: flex;
   flex-wrap: wrap;
@@ -997,6 +1023,10 @@ display: block;
 .about-us-list p {
   font-weight: 400;
   color: #323232;
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 9px;
+  padding-right: 30px;
 }
 
 .about-us-item {
@@ -1061,16 +1091,20 @@ display: block;
 
 
 .blog {
-  padding: 22px;
+
+  padding: 23px 20px;
+  padding-right: 250px;
 
   background-color: #ffffff;
   background-image: url("../img/home_blog_bg.jpg");
   background-repeat: no-repeat;
-  background-position-y: 38%;
-  background-position-x: 18%;
+  background-position-y: 39.3%;
+  background-position-x: 17%;
 }
 
 .blog h2 {
+  padding-bottom: 4px;
+
   font-size:16px;
   color: #323232;
 }
@@ -1080,14 +1114,14 @@ display: block;
   line-height: 30px;
   font-weight: 700;
   color: #323232;
-
   border-bottom: 2px solid #353535;
 }
+
 
 .blog a:hover,
 .blog a:active {
   color: #e84d37;
-  border-bottom: 1px solid rgba(232,77,55, 0.3);
+  border-bottom: 2px solid rgba(232,77,55, 0.3);
 }
 
 
@@ -1101,7 +1135,8 @@ display: block;
 }
 
 .subscription-form {
-  padding: 30px 20px;
+  padding: 29px 21px;
+  padding-bottom: 16px;
   width: 550px;
 
   box-sizing: border-box;
@@ -1115,15 +1150,19 @@ display: block;
 .subscription-form p {
   margin: 0px;
   padding: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 
   font-weight: 400;
   color: #5a5a5a;
 }
 
 .subscription-form input {
-  height: 40px;
+  margin-right: 7px;
+  height: 43px;
+  width: 367px;
+  padding: 15px
 }
+
 
 
 
@@ -1140,14 +1179,14 @@ display: block;
   background-image: url("../img/home_map.png");
   background-repeat: repeat-x;
   background-position-x: 50% ;
-  background-position-y: 50% ;
+  background-position-y: 51% ;
 }
 
 .map .map-pointer {
   display: block;
   position: absolute;
-  bottom: 35%;
-  left: 25%;
+  bottom: 35.1%;
+  left: 25.3%;
 }
 
 .container.contacts-wrapper {
@@ -1158,7 +1197,7 @@ display: block;
 .contacts {
   width: 302px;
 
-  padding: 30px 25px;
+  padding: 29px 25px;
   margin: 62px 0px;
 
   box-sizing: border-box;
@@ -1169,12 +1208,7 @@ display: block;
   border-radius: 15px;
 }
 
-.contacts p {
-  margin: 0;
-  padding: 0;
 
-  margin-bottom: 23px;
-}
 
 .address,
 .tel {
@@ -1184,18 +1218,36 @@ display: block;
   color: #323232;
 }
 
+.address   {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.tel {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+
 .address b,
 .tel b {
+
+display: inline-block;
+  padding-top: 5px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
+.address b {
 
+  padding-top: 1px;
+
+}
 
 
 .container.footer-wrapper {
-  margin-top: 40px;
+ margin-top: 30px;
   padding-bottom: 35px;
 
   display: flex;
@@ -1206,16 +1258,19 @@ display: block;
 
 .social {
   width: 30%;
-
+  padding-top: 9px;
+  padding-bottom: 11px;
   padding: 0;
   margin: 0;
 
+  margin-right: 38px;
+  margin-left: 4px;
   display: flex;
   align-items: flex-end;
 }
 
 .social-button{
-  padding-right: 16px;
+  padding-right: 17px;
 }
 
 .social-button svg {
@@ -1304,18 +1359,41 @@ display: block;
 
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
+
 }
 
 .footer-copyright p {
   margin: 0;
 }
 
+
 .button-academy {
+
+  position: relative;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   color:#ffffff;
+
 }
+
+.button-academy::before {
+  content: "";
+
+
+  display: inline-block;
+  position: absolute;
+  bottom: 100%;
+
+  width: 125px;
+  height: 39px;
+
+  background-image: url("../img/footer_htmlacademy.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 
 .button-academy b {
   border-bottom: 1px solid rgba(255,255,255, 0.2);
@@ -1605,7 +1683,7 @@ display: block;
 
 .button {
   display: inline-block;
-  padding:14px 22px;
+  padding:14px 23px;
 
   outline: none;
 
@@ -1628,13 +1706,34 @@ display: block;
 }
 
 .slider-button {
-  padding: 12px 44px;
+  padding: 10px 40px;
 
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
 
   border-radius: 50px;
+}
+
+.stock-button {
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+
+.subscription-button {
+  vertical-align: middle;
+  padding: 0px 19px;
+  padding-top: 9px;
+  padding-bottom: 12px;
+}
+
+.feedback-button {
+  padding: 0px 27px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  vertical-align: middle;
+
 }
 
 .button:hover {
