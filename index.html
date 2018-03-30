@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
 </head>
 <body>
+
 <input class="visually-hidden radio" type="radio" id="product-1" name="toggle" checked>
 <input class="visually-hidden radio" type="radio" id="product-2" name="toggle">
 <input class="visually-hidden radio" type="radio" id="product-3" name="toggle">
+
 <div class="site-wrapper">
 
 <header class="main-header" >
@@ -251,17 +253,20 @@
   </div>
 </footer>
 
+  <div class="modal-wrapper">
 <section class="modal" name="feedback-form">
   <h2>Мы обязательно вам ответим!</h2>
   <form class="modal-feedback" action="https://echo.htmlacademy.ru" method="post">
     <input type="text" name="name" placeholder="Как вас зовут?">
     <input type="email" name="email" placeholder="Ваша почта для ответа" required>
     <textarea name="comment" rows="10">Напишите что-нибудь...</textarea>
-    <button class="button" type="submit">Отправить</button>
-    <button class="modal-close" type="button">Закрыть форму</button>
+    <div class="structure-modal">
+    <button class="button modal-button" type="submit">Отправить</button>
+    </div>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть форму</span></button>
   </form>
 </section>
-
-
+</div>
+</div>
 </body>
 </html>
