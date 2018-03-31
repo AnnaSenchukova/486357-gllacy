@@ -23,17 +23,17 @@
     </a>
     <ul class="site-navigation">
 
-      <li class="site-item"><a  class="site-title" href="catalog.html">Каталог</a>
+      <li class="site-item site-item-catalog"><a  class="site-title" href="catalog.html">Каталог</a>
         <ul class="submenu" aria-label="Подраздел меню каталог">
           <li><a href="new.html">Новинки</a></li>
           <li><a href="catalog.html">Сливочное</a></li>
-          <li><a href="sherbet.html">Щербет</a></li>
+          <li><a href="sherbet.html">Щербеты</a></li>
           <li><a href="fruit_ice.html">Фруктовый лед</a></li>
           <li><a href="melorin.html">Мелорин</a></li>
         </ul>
       </li>
-      <li class="site-item"><a href="delivery.html">Доставка и оплата</a></li>
-      <li class="site-item"><a href="about_us.html">О Компании</a></li>
+      <li class="site-item site-item-delivery"><a href="delivery.html">Доставка и оплата</a></li>
+      <li class="site-item site-item-company"><a href="company.html">О Компании</a></li>
 
     </ul>
   <ul class="user-navigation" aria-label="Личные настройки">
@@ -49,7 +49,7 @@
         <input type="email" name="login" placeholder="Электронная почта">
         <input type="password" name="password" placeholder="Пароль">
         <div class="structure-authorization">
-        <button class="button" type="submit" aria-label="Нажмите что бы войти">Войти</button>
+        <button class="button button-authorization" type="submit" aria-label="Нажмите что бы войти">Войти</button>
         <div class="alt-actions">
           <a href="forget-password.html">Забыли пароль?</a>
           <a href="registration.html">Новая регистрация</a>
@@ -256,7 +256,7 @@
   <h2>Мы обязательно вам ответим!</h2>
   <form class="modal-feedback" action="https://echo.htmlacademy.ru" method="post">
     <input type="text" name="name" placeholder="Как вас зовут?">
-    <input type="email" name="email" placeholder="Ваша почта для ответа" required>
+    <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
     <textarea name="comment" rows="10">Напишите что-нибудь...</textarea>
     <div class="structure-modal">
     <button class="button modal-button" type="submit">Отправить</button>
