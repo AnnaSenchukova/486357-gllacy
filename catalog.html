@@ -80,33 +80,37 @@
     </li>
   </ul>
   </nav>
+    <div class="structure structure-crumbs">
   <div class="ordering-offline" aria-label="Вы можете связаться с нами и оформить заказ оффлайн">
     <span class="time-work">с 10 до 20, ежедневно</span>
     <span class="number" aria-label="По телефону">8 812 450-25-25</span>
   </div>
+    <ul class="crumbs" aria-label="Путь к текущей странице">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a class="active active-crumbs">Сливочное</a></li>
+    </ul>
+    </div>
   </div>
 </header>
 <main>
   <div class="container">
-  <ul class="crumbs" aria-label="Путь к текущей странице">
-    <li><a href="index.html">Главная</a></li>
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a class="active active-crumbs">Сливочное</a></li>
-  </ul>
-  <h1 class="page-title" aria-label="Подраздел каталога: сливочное мороженное">Сливочное мороженное</h1>
+    <h1 class="page-title" aria-label="Подраздел каталога: сливочное мороженое">Сливочное мороженое</h1>
   <form class="bar" action="https://echo.htmlacademy.ru" method="post"
         aria-label="Поиск мороженного по заданным критериям">
     <fieldset class="sorting-bar">
       <legend>Сортировка:</legend>
+      <div class="sorting-select">
       <select name="sorting">
         <option value="pop">по популярности</option>
         <option value="cheap">сначала не дорогие</option>
         <option value="expensive">сначала дорогие</option>
         <option value="fat">по жирности</option>
       </select>
+      </div>
     </fieldset>
     <fieldset class="prise-bar">
-      <legend>Цена: 100 руб. - 500 руб.</legend>
+      <legend>Цена: 100 руб. – 500 руб.</legend>
         <div class="prise-range">
           <div class="range-scale">
             <div class="range-bar"></div>
@@ -131,14 +135,14 @@
     </fieldset>
     <fieldset class="toppings">
       <legend>Наполнители:</legend>
-      <div class="decoration">
+      <div class="decoration toppings-decoration">
       <input class="visually-hidden bar-checkbox" type="checkbox" name="toppings-chocolate" id="toppings-chocolate-id" checked>
       <label for="toppings-chocolate-id">шоколадные</label>
       <input class="visually-hidden bar-checkbox " type="checkbox" name="toppings-sugar" id="topping-sugar-id" checked>
       <label for="topping-sugar-id">сахарные присыпки</label>
       <input class="visually-hidden bar-checkbox" type="checkbox" name="toppings-fruit" id="toppings-fruit-id" disabled>
       <label for="toppings-fruit-id">фрукты</label>
-      <input class="visually-hidden bar-checkbox" type="checkbox" name="toppings-syrip" id="topping-syrip-id">
+      <input class="visually-hidden bar-checkbox" type="checkbox" name="toppings-syrip" id="topping-syrip-id" checked>
       <label for="topping-syrip-id">сиропы</label>
       <input class="visually-hidden bar-checkbox " type="checkbox" name="toppings-jam" id="topping-jam-id">
       <label for="topping-jam-id">джемы</label>
@@ -249,7 +253,7 @@
   </section>
   <div class="page-navigation" aria-label="Навигация по страницам каталога">
     <a class="prev" href="#prev"><span class="visually-hidden">Назад</span> </a>
-    <a class="page active" aria-label="Текущая страница">1</a></li>
+    <a class="page active page-active" aria-label="Текущая страница">1</a></li>
     <a class="page" href="page2.html">2</a>
     <a class="page" href="page3.html">3</a>
     <a class="page" href="page4.html">4</a>
@@ -286,8 +290,8 @@
   </ul>
   <ul class="info" aria-label="Полезная информация">
     <li><a class="info-suppliers" href="info-suppliers">Для поставщиков</a></li>
-    <li><a class="info-technology" href="info-technology.html">О производстве</a></li>
     <li><a class="info-documents" href="info-documents.html">Наши документы</a></li>
+    <li><a class="info-technology" href="info-technology.html">О производстве</a></li>
     <li><a class="info-eco" href="info-eco.html">Экологические стандарты</a></li>
   </ul>
   <div class="footer-copyright">
