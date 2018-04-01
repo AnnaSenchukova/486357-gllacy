@@ -651,6 +651,10 @@ img {
   padding-left: 20px;
 }
 
+.basket-price span {
+  color:#ababab;
+}
+
 .total-price {
   padding-left: 30px;
 }
@@ -1138,7 +1142,7 @@ img {
 
   font-size: 45px;
   line-height: 1px;
-  font-weight: 1000;
+  font-weight: 700;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
