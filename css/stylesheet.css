@@ -1121,6 +1121,8 @@ img {
 .catalog-item img{
   position: relative;
 
+  padding-bottom: 7px;
+
   border-radius: 50%;
 }
 
@@ -1147,7 +1149,7 @@ img {
 }
 
 .catalog-item .price {
-  bottom:22%;
+  bottom:24%;
   left: 0;
 }
 
@@ -1167,7 +1169,7 @@ img {
 }
 
 .catalog-item .weight {
-  bottom: 25.1%;
+  bottom: 27.2%;
   left: 42%;
 
   font-size: 30px;
@@ -1521,8 +1523,6 @@ img {
   padding: 0;
   margin-left: 4px;
   margin-right: 38px;
-  padding-top: 9px;
-  padding-bottom: 11px;
 }
 
 .social-button{
@@ -1737,10 +1737,9 @@ img {
 .sorting-select select {
   width: 250px;
 
-  padding-top: 5px;
-  padding-bottom: 7px;
-  padding-left: 11px;
-  padding-right: 9px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  padding-left: 16px;
 
   outline: none;
   border: none;
