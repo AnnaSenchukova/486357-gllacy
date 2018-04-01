@@ -171,7 +171,7 @@ img {
   position: absolute;
   top: 77%;
   left: -7%;
-  z-index: 1;
+  z-index: 2;
 
   display: none;
 
@@ -587,7 +587,7 @@ img {
   display: flex;
   justify-content: flex-start;
 
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 .product-basket:last-child {
@@ -603,12 +603,7 @@ img {
   color: #323232;
 }
 
-.button-close,
-.modal-close {
-  position: absolute;
-  top: 3.5%;
-  right: 3.5%;
-
+.button-close {
   margin: 0;
   padding: 0;
 
@@ -616,9 +611,8 @@ img {
   border: none;
 }
 
-.button-close::after {
-  content: "";
-  display: inline-block;
+.button-close-basket {
+  display: block;
 
   width: 11px;
   height: 11px;
@@ -627,13 +621,23 @@ img {
 
   background-image: url("../img/header_basket_button_close.svg");
   background-repeat: no-repeat;
-  background-position:  0 0;
+  background-position: 0 0;
 }
+
+
+.modal-close {
+  position: absolute;
+  top: 3.5%;
+  right: 3.5%;
+}
+
+
+
 
 .product-basket img {
   border-radius: 50%;
   margin-top: -10px;
-  margin-left: 23px;
+  margin-left: 7px;
 }
 
 .basket-name {
@@ -643,11 +647,11 @@ img {
 }
 
 .basket-price {
-  margin-left: 29px;
+  margin-left: 27px;
 }
 
 .total-price {
-  margin-left: 31px;
+  margin-left: 30px;
 }
 
 .structure-basket {
@@ -2163,6 +2167,7 @@ img {
   width: 170px;
   min-height: 44px;
 
+  margin-top:-2px;
   padding-top: 9px;
   padding-bottom: 6px;
   padding-left: 0;
