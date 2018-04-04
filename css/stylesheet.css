@@ -100,6 +100,7 @@ img {
 .site-item>a {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
 
   padding: 7px 15px;
 
@@ -602,7 +603,7 @@ img {
 
 
 }
-
+.modal-close,
 .button-close {
   margin: 0;
   padding: 0;
@@ -1019,13 +1020,12 @@ img {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
 
   width: 21px;
   height: 21px;
 
   margin-right: 8px;
-
-  vertical-align: top;
 
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -1287,6 +1287,7 @@ img {
 
 .about-us b {
   display: inline-block;
+  vertical-align: middle;
 
   padding: 20px;
   padding-bottom: 10px;
@@ -1535,6 +1536,7 @@ img {
 .address b,
 .tel b {
   display: inline-block;
+  vertical-align: middle;
 
   padding-top: 5px;
 
@@ -1701,6 +1703,7 @@ img {
   bottom: 100%;
 
   display: inline-block;
+  vertical-align: middle;
 
   width: 125px;
   height: 39px;
@@ -2130,6 +2133,7 @@ img {
 .prev::after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 10px;
   height: 13px;
 
@@ -2146,6 +2150,7 @@ img {
 .next::after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
 
   width: 10px;
   height: 13px;
@@ -2165,6 +2170,7 @@ img {
 
 .button {
   display: inline-block;
+  vertical-align: top;
 
   padding:14px 23px;
 
@@ -2175,7 +2181,7 @@ img {
   font-weight: 700;
   text-align: center;
   color:#ffffff;
-  vertical-align: top;
+
   text-decoration: none;
 
   background-color: #f26843;
