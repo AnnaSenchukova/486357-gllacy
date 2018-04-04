@@ -198,6 +198,7 @@
     </div>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBqQBOG4SB" width="1200" height="430" frameborder="0"></iframe>
       <div class="container">
         <section class="contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
@@ -268,13 +269,12 @@
         </a>
       </div>
     </div>
-    L
   </footer>
   <section class="modal">
     <h2>Мы обязательно вам ответим!</h2>
     <form class="modal-feedback" action="https://echo.htmlacademy.ru" method="post">
-      <input type="text" name="name" placeholder="Как вас зовут?">
-      <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
+      <input type="text" name="my-name" placeholder="Как вас зовут?">
+      <input type="email" name="email" placeholder="Ваша почта для ответа?">
       <textarea name="comment" rows="10">Напишите что-нибудь...</textarea>
       <div class="structure-modal">
         <button class="button modal-button" type="submit">Отправить</button>
@@ -283,5 +283,93 @@
     </form>
   </section>
 </div>
+
+<script>
+  var feedback = document.querySelector(".feedback-button");
+  var modal = document.querySelector(".modal");
+  var close = modal.querySelector(".modal-close");
+  var form = modal.querySelector(".modal-feedback");
+  var selfPresentation = modal.querySelector("[name=my-name]");
+  var post = modal.querySelector("[name=email]");
+  var comment = modal.querySelector("[name=comment]");
+
+  var isStorageSupport = true;
+  var storageSelf = "";
+  var storagePost = "";
+
+  try {
+    storageSelf = localStorage.getItem("self");
+    storagePost = localStorage.getItem("post");
+  } catch (err) {
+    isStorageSupport = false;
+  };
+
+
+  feedback.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal.classList.add("modal-show");
+
+
+      if (storageSelf) {
+        selfPresentation.value = storageSelf;
+        post.focus();
+      } else {
+        selfPresentation.focus();
+      }
+
+
+
+      if (storagePost) {
+        post.value = storagePost;
+        comment.focus();
+        if (comment.value = ("Напишите что-нибудь... ")) {
+          comment.clear("comment.value");
+        }
+      }
+       else {
+        post.focus();
+      }
+
+  });
+
+
+
+
+
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal.classList.remove("modal-show");
+    modal.classList.remove("modal-error");
+  });
+
+
+  form.addEventListener("submit", function (evt) {
+    if (!selfPresentation.value || !post.value || !comment.value && comment.value !== ("Напишите что-нибудь... ") ) {
+      evt.preventDefault();
+      console.log(" Заполните все поля формы перед отправкой! ");
+      modal.classList.remove("modal-error");
+      modal.offsetWidth = modal.offsetWidth;
+      modal.classList.add("modal-error");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("self", selfPresentation.value);
+        localStorage.setItem("post", post.value);
+      }
+    }
+
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (modal.classList.contains("modal-show")) {
+        modal.classList.remove("modal-show");
+        modal.classList.remove("modal-error");
+      }
+    }
+  });
+</script>
+
 </body>
 </html>
