@@ -1526,6 +1526,7 @@ img {
 
   min-height: 430px;
 
+  background-color: #cfe0c0;
   background-image: url("../img/home_map_grouplayers.jpg");
   background-repeat: no-repeat;
   background-position-x: 50%;
@@ -1534,9 +1535,12 @@ img {
 
 .map iframe {
   position: absolute;
-
   z-index: 1;
+
   width: 100%;
+
+  border: none;
+
 }
 
 .map .container {
