@@ -1035,32 +1035,35 @@ img {
 }
 
 
-#product-1:checked ~ .site-wrapper #brulee-raspberry,
-#product-2:checked ~ .site-wrapper #chocolate-lemon,
-#product-3:checked ~ .site-wrapper #fudre-strawberry {
+.slide-1:checked ~ .site-wrapper .brulee-raspberry,
+.slide-2:checked ~ .site-wrapper .chocolate-lemon,
+.slide-3:checked ~ .site-wrapper .fudre-strawberry {
   display: block;
 }
 
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+.slide-1:checked ~ .site-wrapper .slider-page-1,
+.slide-2:checked ~ .site-wrapper .slider-page-2,
+.slide-3:checked ~ .site-wrapper .slider-page-3 {
   background-color: #ffffff;
 }
 
-#product-1:checked ~ .site-wrapper {
+.slide-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/home_sale_brulee_raspberry.png");
 }
 
-#product-2:checked ~ .site-wrapper {
+.slide-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/home_sale_chocolate_lemon.png");
 }
 
-#product-3:checked ~ .site-wrapper {
+.slide-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/home_sale_fudre-strawberry.png");
 }
+
+
+
 
 
 
