@@ -1091,11 +1091,13 @@ img {
 }
 
 .stock-jam {
+  background-color: #ae0a2d;
   background-image: url("../img/home_stock_jam_bg.jpg");
   background-repeat: repeat-y;
 }
 
 .stock-chocolate {
+  background-color: #5d3828;
   background-image: url("../img/home_stock_chocolate_bg.jpg");
   background-repeat: repeat-y;
 }
@@ -1279,7 +1281,7 @@ img {
   padding-bottom: 10px;
   padding-top: 3px;
 
-  background-color: #ffffff;
+  background-color: #ede3c8;
   background-image: url("../img/home_about_us_bg.jpg");
   background-size: auto;
   border-radius: 15px;
@@ -1385,7 +1387,7 @@ img {
   padding: 23px 20px;
   padding-right: 250px;
 
-  background-color: #ffffff;
+  background-color: #fccdd7;
   background-image: url("../img/home_blog_bg.jpg");
   background-repeat: no-repeat;
   background-position-y: 39.3%;
@@ -1430,7 +1432,7 @@ img {
   box-sizing: border-box;
 
   padding: 5px;
-
+  background-color: #92ceff;
   background-image: url("../img/home_subscription_background.svg");
   background-repeat: repeat-y;
 }
@@ -1479,6 +1481,7 @@ img {
 
   min-height: 430px;
 
+  background-color: #cfe0c0;
   background-image: url("../img/home_map_grouplayers.jpg");
   background-repeat: no-repeat;
   background-position-x: 50% ;

@@ -275,7 +275,7 @@
     <form class="modal-feedback" action="https://echo.htmlacademy.ru" method="post">
       <input type="text" name="my-name" placeholder="Как вас зовут?">
       <input type="email" name="email" placeholder="Ваша почта для ответа?">
-      <textarea name="comment" rows="10">Напишите что-нибудь...</textarea>
+      <textarea name="comment" rows="10" placeholder="Напишите что-нибудь..."></textarea>
       <div class="structure-modal">
         <button class="button modal-button" type="submit">Отправить</button>
       </div>
@@ -322,9 +322,7 @@
       if (storagePost) {
         post.value = storagePost;
         comment.focus();
-        if (comment.value = ("Напишите что-нибудь... ")) {
-          comment.clear("comment.value");
-        }
+
       }
        else {
         post.focus();
